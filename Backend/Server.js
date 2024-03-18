@@ -1,5 +1,6 @@
 import Express from "express";
 import mongoose from "mongoose";
+import postRoute from "./routes/Post"
 
 const Server = Express();
 const port = 3000;
@@ -33,9 +34,13 @@ mongoose.connect(uri)
     console.error("Error connecting to database:", err);
 });
 
+Server.use(Express.json());
+
 Server.get('/', (req, res) => {
     res.send('Hello');
 });
+
+Server.use('/api/post', postRoute);
 
 Server.listen(port, () => {
     console.log(`Server is running on ${port}`);
