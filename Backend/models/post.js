@@ -3,15 +3,15 @@ import mongoose from "mongoose";
 
 const postSchema = new mongoose.Schema({
      title: {
-        require : true,
+        required : true,
         type: String,
      },
      content: {
-        require : true,
+        required : true,
         type: String,
      },
      author: {
-        require : true,
+        required : true,
         type: String,
      },
      createdAt: {
