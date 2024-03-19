@@ -34,8 +34,7 @@ function Register() {
           setErrors(newErrors);
         } else {
            try {
-
-            const response = await axios.post('/api/register', formData)
+            const response = await axios.post('/register', formData)
              console.log('Registration successful:', response.data);
              
            } catch (error) {

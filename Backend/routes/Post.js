@@ -1,5 +1,5 @@
 import  Express  from "express";
-import post from "../models/post"
+import post from "../models/post.js"
 
 const app = Express();
 app.use(Express.json());
