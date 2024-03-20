@@ -1,6 +1,5 @@
 import {userAuthModel} from '../models/userAuth.js'
 
-
 const checkLogin = async () => { 
  
     try {

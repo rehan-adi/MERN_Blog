@@ -21,14 +21,8 @@ mongoose.connect(uri)
 });
 
 
-Server.get('/', (req, res) => {
-    res.send('Hello');
-});
-
 Server.use('/api/post', app);
 Server.use('/', authRouter)
-
-Server.use('/login', checkLogin);
 
 Server.listen(port, () => {
     console.log(`Server is running on ${port}`);
