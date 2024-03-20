@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 
 function Login() {
 
@@ -7,14 +8,24 @@ function Login() {
         password: '',
     });
 
-    const handleSubmit = (e) => {
+    const handleInputChange = (e) => {
+      setFormData({ ...formData, [e.target.id]: e.target.value});
+  };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormData({...formData, [e.target.email]: e.target.value})
+        try {
+          const response = await axios.post('http://localhost:3000/login', formData);
+          console.log('Login successfully:', response.data);
+          window.location.href = '/home'; 
+        } catch (error) {
+          console.error("error", error);
+        }
       };
 
   return (
     <div className='h-screen flex justify-center items-center w-auto bg-white text-black'>
-       <div className='bg-white flex justify-center items-center flex-col w-[30vw] shadow-2xl h-[70vh]'>
+       <div className='bg-white flex justify-center items-center flex-col w-[90vw] lg:w-[30vw] shadow-2xl h-[70vh]'>
          <form onSubmit={handleSubmit}>
           <h2 className="text-3xl text-center font-semibold mb-7">Login</h2>
           <div className="mb-4">
@@ -22,12 +33,12 @@ function Login() {
               Email
             </label>
             <input
-              className="shadow appearance-none border w-[25vw] py-2 px-3 text-gray-700 leading-tight rounded-xl focus:outline-none bg-[#F8F4F8] focus:shadow-outline"
+              className="shadow appearance-none border w-[80vw] lg:w-[25vw] py-2 px-3 text-gray-700 leading-tight rounded-xl focus:outline-none bg-[#F8F4F8] focus:shadow-outline"
               id="email"
               type="email"
               placeholder="Enter Email"
               value={formData.email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleInputChange}
               required
             />
           </div>
@@ -36,18 +47,18 @@ function Login() {
               Password
             </label>
             <input
-              className="shadow appearance-none bg-[#F8F4F8] border  w-[25vw] py-2 px-3 text-gray-700 leading-tight  rounded-xl focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none bg-[#F8F4F8] border w-[80vw]  lg:w-[25vw] py-2 px-3 text-gray-700 leading-tight  rounded-xl focus:outline-none focus:shadow-outline"
               id="password"
               type="password"
               placeholder="Enter Password"
               value={formData.password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={handleInputChange}
               required
             />
           </div>
           <div className="flex items-center mt-10 justify-between">
             <button
-              className="bg-[#0000FF] w-[25vw] text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+              className="bg-[#0000FF] w-[80vw] lg:w-[25vw] text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Login
@@ -73,6 +84,9 @@ function Login() {
              <div className='w-16 flex justify-center items-center rounded-md h-10  border '>
              <img src="/LogoImages\apple-logo-logo-icons-31.png" alt="img" width={25} />
              </div>
+        </div>
+        <div className='flex justify-center items-center mt-10'>
+            <h1>Don't have an account <span className='text-[#0000FF]'>Register</span> Here </h1>
         </div>
 
         </form>

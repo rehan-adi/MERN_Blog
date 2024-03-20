@@ -28,6 +28,8 @@ Server.get('/', (req, res) => {
 Server.use('/api/post', app);
 Server.use('/', authRouter)
 
+Server.use('/login', checkLogin);
+
 Server.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
