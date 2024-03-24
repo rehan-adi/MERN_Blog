@@ -127,10 +127,10 @@ function Home() {
              </div>
 
              <div className="flex justify-around items-center">
-                <img src="https://static.wixstatic.com/media/0b340f_03f0187ee84b4573a8ff2cd2fde479ae~mv2.png/v1/fill/w_218,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%206.png" alt="" />
-                <img src="https://static.wixstatic.com/media/0b340f_3a898e9cc4fd4b5eadc789d8f6f47521~mv2.png/v1/fill/w_206,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%205.png" alt="" />
-                <img src="https://static.wixstatic.com/media/0b340f_a842f578d5754db8b154bbefd00485c0~mv2.png/v1/fill/w_206,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%207.png" alt="" />
-                <img src="https://static.wixstatic.com/media/0b340f_7f73b1169eea4ac78b85db01e0847c4b~mv2.png/v1/fill/w_219,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%204.png" alt="" />
+                <img src="https://static.wixstatic.com/media/0b340f_03f0187ee84b4573a8ff2cd2fde479ae~mv2.png/v1/fill/w_218,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%206.png" alt="" width={190} />
+                <img src="https://static.wixstatic.com/media/0b340f_3a898e9cc4fd4b5eadc789d8f6f47521~mv2.png/v1/fill/w_206,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%205.png" alt="" width={150} />
+                <img src="https://static.wixstatic.com/media/0b340f_a842f578d5754db8b154bbefd00485c0~mv2.png/v1/fill/w_206,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%207.png" alt="" width={150} />
+                <img src="https://static.wixstatic.com/media/0b340f_7f73b1169eea4ac78b85db01e0847c4b~mv2.png/v1/fill/w_219,h_216,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Artboard%202%20copy%204.png" alt="" width={150} />
              </div>
 
          </div>

@@ -27,7 +27,7 @@ function Login() {
   };
 
   return (
-    <div className="lg:max-h-fit lg:py-36 flex justify-center items-center w-auto bg-white text-black">
+    <div className="lg:max-h-fit lg:py-36 flex h-screen justify-center items-center w-auto bg-white text-black">
       <div className="bg-white flex justify-center items-center flex-col w-[90vw] lg:w-[30vw] shadow-2xl h-[70vh]">
         <form onSubmit={handleSubmit}>
           <h2 className="text-3xl text-center font-semibold mb-7">Login</h2>

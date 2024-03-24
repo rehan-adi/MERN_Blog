@@ -1,31 +1,57 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { FaBarsStaggered,} from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
 
 function Navbar() {
+
+
+     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+     const toggleSidebar = () => {
+       setIsSidebarOpen(!isSidebarOpen);
+     };
+
   return (
-    <div className=' w-full fixed h-[16vh]'>
-         <header className='bg-black flex justify-between items-center px-20 text-white w-full h-[8vh]'>
-              <h1>Rehan'sNet</h1>
-              <ul className='flex items-center justify-center gap-10'>
+    <div className=' w-full fixed h-[14vh]'>
+         <header className='bg-black flex justify-between items-center px-5 lg:px-20 text-white w-full h-[7vh]'>
+              <h1 className='uppercase text-xl'>Rehan'sNet</h1>
+              <div className='flex lg:hidden'>
+              <FaBarsStaggered className='text-2xl' onClick={toggleSidebar}/>
+              </div>
+              <ul className='lg:flex hidden items-center justify-center gap-10'>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Home</li>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Blog Post</li>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>About Us</li>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Contact</li>
               </ul>
          </header>
-         <header className='border-4 flex w-full h-[8vh] border-black'>
-               <div className='flex justify-center bg-white items-center gap-5 w-[20vw] h-full border-r-4 border-black '>
+           
+         <div className={`fixed top-0 right-0 h-screen bg-black w-full text-white transition-transform duration-500 ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className='flex justify-end items-center p-5'>
+          <MdClose  className='text-3xl text-[#C3FF5B] cursor-pointer' onClick={toggleSidebar} />
+        </div>
+        <ul className='flex flex-col items-center justify-center gap-5 mt-10'>
+          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Home</li>
+          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Blog Post</li>
+          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>About Us</li>
+          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Contact</li>
+        </ul>
+      </div>
+
+         <header className='border-4 flex w-full h-[7vh] border-black'>
+               <div className='flex justify-center bg-white items-center gap-4 lg:gap-5 w-[45vw] lg:w-[20vw] h-full border-r-4 border-black '>
                     <img src="/LogoImages\facebook.png" width={25}  alt="" />
                     <img src="/LogoImages\linkdin.png" width={25}  alt="" />
                     <img src="/LogoImages\Twitter.webp"  width={25} alt="" />
                     <img src="/LogoImages\instagram.ong.webp" width={25}  alt="" />
                </div>
-               <div className='w-[40vw] flex bg-white justify-center items-center h-full border-r-4 border-black'>
-                  <h1 className='font-bold text-base'>Design and Developed by @Rehan</h1>
+               <div className='lg:w-[40vw] w-[55vw] flex bg-white justify-center items-center h-full lg:border-r-4 border-black'>
+                  <h1 className='font-bold text-xs lg:text-base'>Design and Developed by @Rehan</h1>
                </div>
-               <divl className='w-[40vw] flex justify-center items-center h-full border-r-4 border-black'>
+               <div className='w-[40vw] lg:flex hidden justify-center items-center h-full border-r-4 border-black'>
                      <button className='w-[20vw] border-r-4 font-bold bg-white hover:bg-[#C3FF5B] text-lg border-black h-full '>Profile</button>
                      <button className='w-[20vw] bg-[#C3FF5B] font-bold text-lg h-full'>Connect</button>
-               </divl>
+               </div>
          </header>
     </div>
   )
