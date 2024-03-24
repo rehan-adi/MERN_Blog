@@ -52,7 +52,7 @@ function Register() {
   };
 
   return (
-    <div className="w-auto flex justify-around flex-col lg:flex-row items-center max-h-fit py-10 lg:max-h-fit lg:py-16 bg-white text-black">
+    <div className="w-auto flex justify-around flex-col lg:flex-row items-center max-h-fit py-10 lg:max-h-fit lg:py-44 bg-white text-black">
       <div className="lg:w-[45vw] max-h-fit lg:py-0 py-10 flex justify-center items-center flex-col gap-10">
         <h1 className="lg:text-5xl text-4xl text-center font-bold">
           Register To <span className="text-[#C3FF5B]">Manage</span> Awesome
