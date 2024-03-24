@@ -30,11 +30,11 @@ function Navbar() {
         <div className='flex justify-end items-center p-5'>
           <MdClose  className='text-3xl text-[#C3FF5B] cursor-pointer' onClick={toggleSidebar} />
         </div>
-        <ul className='flex flex-col items-center justify-center gap-5 mt-10'>
-          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Home</li>
-          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Blog Post</li>
-          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>About Us</li>
-          <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Contact</li>
+        <ul className='flex flex-col items-center justify-center gap-14 mt-20'>
+          <li className='uppercase text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Home</li>
+          <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Blog Post</li>
+          <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>About Us</li>
+          <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Contact</li>
         </ul>
       </div>
 
