@@ -1,6 +1,6 @@
 import {userAuthModel} from '../models/userAuth.js'
 
-const checkLogin = async () => { 
+const checkLogin = async (req, res) => { 
  
     try {
         const {email, password} = req.body;
@@ -14,7 +14,7 @@ const checkLogin = async () => {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
-        res.status(200).json({mesage: 'Login successful'})
+        res.status(200).json({message: 'Login successful'})
 
     } catch (error) {
         console.error('Error', error);

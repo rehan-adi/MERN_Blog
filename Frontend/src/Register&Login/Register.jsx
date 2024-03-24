@@ -33,13 +33,17 @@ function Register() {
         if (Object.keys(newErrors).length > 0) {
           setErrors(newErrors);
         } else {
-           try {
-            const response = await axios.post('http://localhost:3000/register', formData)
-             console.log('Registration successful:', response.data);
-             
-           } catch (error) {
-              console.log('Error', error);
-           }
+          try {
+            console.log('FormData:', formData); 
+            const response = await axios.post('http://localhost:3000/register', JSON.stringify(formData), {
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            });
+            console.log('Registration successful:', response.data);
+          } catch (error) {
+            console.log('There is an Error', error);
+          }
         }
       };
 
