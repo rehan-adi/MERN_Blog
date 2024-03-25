@@ -20,7 +20,7 @@ function Navbar() {
               </div>
               <ul className='lg:flex hidden items-center justify-center gap-10'>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Home</li>
-                 <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Blog Post</li>
+                 <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Blog's</li>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>About Us</li>
                  <li className='uppercase hover:text-[#C3FF5B] cursor-pointer duration-500'>Contact</li>
               </ul>
@@ -32,7 +32,7 @@ function Navbar() {
         </div>
         <ul className='flex flex-col items-center justify-center gap-14 mt-20'>
           <li className='uppercase text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Home</li>
-          <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Blog Post</li>
+          <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Blog's </li>
           <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>About Us</li>
           <li className='uppercase hover:text-[#C3FF5B] text-3xl cursor-pointer duration-500'>Contact</li>
         </ul>
