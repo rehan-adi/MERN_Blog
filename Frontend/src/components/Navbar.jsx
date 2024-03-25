@@ -12,7 +12,7 @@ function Navbar() {
      };
 
   return (
-    <div className=' w-full fixed h-[14vh]'>
+    <div className=' w-full z-50 fixed h-[14vh]'>
          <header className='bg-black flex justify-between items-center px-5 lg:px-20 text-white w-full h-[7vh]'>
               <h1 className='uppercase text-xl'>Rehan'sNet</h1>
               <div className='flex lg:hidden'>
