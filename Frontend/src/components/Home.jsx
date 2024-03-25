@@ -408,51 +408,51 @@ function Home() {
 
       {/* **************************************Quots********************************************* */}
          
-         {/* <div className="">
-              <div className="border-t-2 border-black mt-16 flex  border-b-2">
-                    <div className="w-[3vw] bg-black h-[8vh]">
+         <div className="">
+              <div className="border-t-2 border-black mt-16 flex border-b-2">
+                    <div className="w-[3vw] lg:flex hidden bg-black h-[8vh]">
 
                     </div>
-                    <div className="ml-5">
-                        <h1 className="text-5xl uppercase font-extrabold">
+                    <div className="lg:ml-5 w-full lg:w-auto">
+                        <h1 className="text-5xl text-center mt-4 lg:mt-0 lg:text-start uppercase font-extrabold">
                             Quotes
                         </h1>
-                        <p className="font-semibold mt-6 text-lg">
+                        <p className="font-semibold text-center lg:text-start mb-3 mt-6 lg:mt-3 text-lg">
                             Quot's You Need To Read
                         </p>
                     </div>
               </div>
          </div>
 
-         <div className="flex justify-between mt-9 items-center">
-              <div className="bg-[#C3FF5B] flex  px-5 justify-center items-center gap-6 flex-col w-[21vw] h-[35vh]">
+         <div className="flex justify-between flex-col lg:flex-row lg:gap-0 gap-6 mt-14 lg:mt-9 items-center">
+              <div className="bg-[#C3FF5B] flex px-5 justify-center items-center gap-6 flex-col w-[85vw] lg:w-[21vw] h-[30vh] lg:h-[35vh]">
                      <h1 className="text-lg text-center font-semibold">"Your time is limited, don't waste it living someone else's life."</h1>
                      <h3 className="font-bold">Steve Jobs</h3>
               </div>
-              <div className="bg-[#C3FF5B] flex justify-center items-center gap-6 flex-col px-5 w-[21vw] h-[35vh]">
+              <div className="bg-[#C3FF5B] flex justify-center items-center gap-6 flex-col px-5 w-[85vw] lg:w-[21vw] h-[30vh] lg:h-[35vh]">
                     <h1 className="text-lg text-center font-semibold">"I knew that if I failed I wouldn’t regret that, but I knew the one thing I might regret is not trying."</h1>
                      <h3 className="font-bold">Jeff Bezos</h3>
               </div>
-              <div className="bg-[#C3FF5B]  px-5 flex justify-center items-center flex-col gap-6 w-[21vw] h-[35vh]">
+              <div className="bg-[#C3FF5B]  px-5 flex justify-center items-center flex-col gap-6 w-[85vw] lg:w-[21vw] h-[30vh] lg:h-[35vh]">
                       <h1 className="text-lg text-center font-semibold">"The biggest risk is not taking any risk... In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks."</h1>
                       <p  className="font-bold">Mark Zuckerberg</p>
               </div>
          </div>
- */}
+
 
 
          {/* *********************Motivation************************************** */}
 
-         {/* <div className="">
+         <div className="max-h-fit">
               <div className="border-t-2 border-black mt-16 flex  border-b-2">
-                    <div className="w-[3vw] bg-black h-[8vh]">
+                    <div className="w-[3vw] lg:flex hidden bg-black h-[8vh]">
 
                     </div>
-                    <div className="ml-5">
-                        <h1 className="text-5xl uppercase font-extrabold">
+                    <div className="lg:ml-5 w-full lg:w-auto">
+                        <h1 className="text-5xl text-center lg:text-start mt-3 lg:mt-0 uppercase font-extrabold">
                           MOTIVATION
                         </h1>
-                        <p className="font-semibold mt-6 text-lg">
+                        <p className="font-semibold text-center lg:text-start lg:mb-0 mb-3 mt-6 text-lg">
                             What Makes You Motivate
                         </p>
                     </div>
@@ -460,8 +460,8 @@ function Home() {
          </div>
 
          <div className="flex justify-between flex-col gap-6 mt-9 items-center">
-              <div className="bg-[#C3FF5B] flex  px-16 justify-center items-center gap-6 flex-col w-[80vw] h-[65vh]">
-                  <h1 className="text-center font-semibold text-xl">This motivational message is for people who facing challenges, setbacks, or moments of doubt in life.</h1>
+              <div className="bg-[#C3FF5B] flex px-4 lg:px-16 justify-center items-center gap-6 flex-col lg:w-[80vw] w-[95vw] h-[90vh] lg:h-[65vh]">
+                  <h1 className="text-center font-semibold text-lg lg:text-xl">This motivational message is for people who facing challenges, setbacks, or moments of doubt in life.</h1>
 
                      <p className="text-sm font-semibold mt-6">Life is an incredible journey filled with twists, turns, and unexpected challenges. Along the way, we encounter moments of triumph and times of struggle. It's during these challenging times that our true strength and resilience are tested. Remember, every setback is an opportunity for growth. Every failure is a lesson in disguise, guiding us closer to our goals. Embrace the challenges with courage, knowing that they are shaping you into the person you are meant to become.</p>
 
@@ -470,8 +470,8 @@ function Home() {
                      <p className="text-sm font-semibold">You are capable, you are worthy, and you are destined for greatness. Let your passion ignite the fire within you, and let nothing dim the light of your dreams. The world is waiting for you to shine."</p>
               </div>
 
-              <div className="bg-[#C3FF5B] flex  px-16 justify-center items-start gap-6 flex-col w-[80vw] h-[75vh]">
-                  <h1 className="text-center font-semibold text-xl">This motivational message is for people who facing challenges, setbacks, or moments of doubt in life.</h1>
+              <div className="bg-[#C3FF5B] flex px-4 lg:px-16 justify-center items-start gap-6 flex-col lg:w-[80vw] w-[95vw] max-h-fit lg:py-0 py-12 lg:h-[75vh]">
+                  <h1 className="text-center font-semibold text-lg lg:text-xl">This motivational message is for people who facing challenges, setbacks, or moments of doubt in life.</h1>
 
                      <p className="text-sm font-semibold mt-6">Starting your own business isn't just about chasing profits; it's about pursuing your passions, solving problems, and making a difference in the lives of others. It's about daring to dream big and having the courage to turn those dreams into reality. Are you ready to embark on the thrilling adventure of entrepreneurship? It's time to seize the opportunity to build something extraordinary, just like visionaries such as Elon Musk and Steve Jobs did.</p>
 
@@ -481,7 +481,7 @@ function Home() {
 
                      <p className="text-sm  font-semibold">Your time is now. Your destiny awaits. Let's make it happen."</p>
               </div>
-         </div> */}
+         </div>
 
 
          {/* *****************************Feature********************************** */}
