@@ -2,6 +2,7 @@ import Express from "express";
 import mongoose from "mongoose";
 import app from "./routes/Post.js"
 import authRouter from './routes/authRoute.js'
+import appContact from './routes/contactRoutes.js'
 import cors from 'cors'
 
 const Server = Express();
@@ -22,7 +23,9 @@ mongoose.connect(uri)
 
 
 Server.use('/api/post', app);
-Server.use('/', authRouter)
+Server.use('/', authRouter);
+
+Server.use('/contact', appContact);
 
 Server.listen(port, () => {
     console.log(`Server is running on ${port}`);
