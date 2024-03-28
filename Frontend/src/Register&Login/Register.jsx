@@ -60,7 +60,7 @@ function Register() {
         </h1>
         <p className="text-center font-semibold">
           If You Already have An Account{" "}
-          <Link to="/login" className="text-[#C3FF5B]">
+          <Link to="/" className="text-[#C3FF5B]">
            <span> Login </span>
           </Link>
           Here

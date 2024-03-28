@@ -1,19 +1,19 @@
 import mongoose from 'mongoose';
 
 const contactSchema = mongoose.Schema({
-    fullName:{
-        type: 'string',
+    fullName: {
+        type: String,
         required: true,
     },
-    email:{
-        type: 'string',
+    email: {
+        type: String,
         required: true,
     },
-    message:{
-        type: 'string',
+    message: {
+        type: String,
         required: true,
     }
-})
+});
 
 const contactModel = mongoose.model('contactModel', contactSchema);
 export default contactModel;

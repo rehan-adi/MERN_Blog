@@ -4,12 +4,16 @@ import app from "./routes/Post.js"
 import authRouter from './routes/authRoute.js'
 import appContact from './routes/contactRoutes.js'
 import cors from 'cors'
+import bodyParser from 'body-parser';
+
 
 const Server = Express();
 const port = 3000;
 
 const uri = 'mongodb+srv://Blog_Data:rehan12345@rehan.cycatda.mongodb.net/?retryWrites=true&w=majority&appName=Rehan';
 
+Server.use(bodyParser.urlencoded({ extended: false }));
+Server.use(bodyParser.json());
 Server.use(cors());
 Server.use(Express.json());
 

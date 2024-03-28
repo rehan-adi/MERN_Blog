@@ -4,6 +4,6 @@ import contacts from '../controllers/contactControllers.js';
 const app = Express.Router();
 
 
-app.post('/contact', contacts);
+app.post('/', contacts);
 
 export default app;
