@@ -45,6 +45,7 @@ function Register() {
           }
         );
         console.log("Registration successful:", response.data);
+        window.location.href = "/";
       } catch (error) {
         console.log("There is an Error", error);
       }
